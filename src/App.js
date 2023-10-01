@@ -11,9 +11,10 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      //method 1
+      <h2>Hello This Chisty</h2>
+      /* Method 1 of adding pics through importing */
       <img src={img1} alt="here is a female icon" />
-      //method 2
+      /* Method 2 of adding pics through using require */
       <img src={require('./images/male.png')} alt="" />
       <Context/>
       <Employees/>
