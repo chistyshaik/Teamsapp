@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+import React from 'react';
+import Header from './components/Header';
+import Context from './components/Context';
+import Footer from './components/Footer';
+import Employees from './components/Employees';
+import img1 from './images/female.png'
 import './App.css';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      //method 1
+      <img src={img1} alt="here is a female icon" />
+      //method 2
+      <img src={require('./images/male.png')} alt="" />
+      <Context/>
+      <Employees/>
+      <Footer/>
     </div>
   );
 }
